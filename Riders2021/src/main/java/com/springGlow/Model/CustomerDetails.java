@@ -44,4 +44,8 @@ public class CustomerDetails {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private LoginDetails customer_Login;
+	
+	
+	
+	
 }

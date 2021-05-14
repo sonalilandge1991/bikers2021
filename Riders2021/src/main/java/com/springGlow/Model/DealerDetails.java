@@ -1,5 +1,6 @@
 package com.springGlow.Model;
 
+import java.time.LocalDate;
 /**
  * @author Sonali
  *@date 14-05-2021
@@ -35,8 +36,8 @@ public class DealerDetails {
 	private long dealer_AdharId;
 	private int dealer_BikesCount;
 	
-	@Temporal(TemporalType.DATE)
-	private Date dealer_RegistrationDate;
+	//@Temporal(TemporalType.DATE)
+	private LocalDate dealer_RegistrationDate;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private LoginDetails dealer_Login;
